@@ -6891,8 +6891,7 @@ a.list-group-item-danger.active:focus {
 .jumbotron h6 {
   color: #fff;
 }
-/* imported by bootstrap.less */
-/* home */
+/** home **/
 h1,
 h2,
 h3,
@@ -6903,16 +6902,46 @@ nav {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    float: none !important;
     display: flex;
+  }
+  .navbar-brand,
+  .navbar-header {
+    float: none !important;
+    align-self: flex-start;
+    width: 150px;
+  }
+  .social-container {
+    justify-content: flex-end;
+  }
+  .links-container {
+    width: 100%;
+  }
+  .navbar-nav,
+  .links-container .navbar-nav > li {
+    float: none !important;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-default .navbar-collapse {
+    display: inline-flex !important;
+    width: 100%;
+  }
+  .links-container .navbar-nav {
+    justify-content: center;
   }
   .navbar-right {
     float: none !important;
     margin-right: 0;
     display: flex;
+    justify-content: flex-end;
   }
   .navbar-header {
+    display: flex;
     float: none !important;
+  }
+  .navbar-collapse.collapse {
+    display: inline-flex;
   }
 }
 .album img {

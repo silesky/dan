@@ -1,96 +1,116 @@
-/* imported by bootstrap.less */
+//imported by bootstrap.less
 
-/* home */
-
+/** home **/
 h1, h2, h3, h4, serif, nav {
-  font-family: @font-family-serif;
+	font-family: @font-family-serif;
 }
 
 
-// width - social - navbar-brand
 
-
-
-// .navbar {
-//   position: relative;
-//   min-height: 50px;
-//   margin-bottom: 20px;
-//   border: 1px solid transparent;
-// }
-// for site nav, 
+//.navbar {
+  //   position: relative;
+  //   min-height: 50px;
+  //   margin-bottom: 20px;
+  //   border: 1px solid transparent;
+  //;
+}
+//for site nav, 
 // get rid of all floats, use flexbox
+
 @media (min-width: 768px) {
-  .navbar {
-    border-radius: 4px;
-    display: flex;
-  }
+	.navbar {
+		float: none !important;
+		display: flex;
+	}
 
-// social
-.navbar-right {
-  // float: right !important;
-  // margin-right: -15px; 
-  float: none !important;
-  margin-right: 0;
-  display: flex;
+	.navbar-brand, .navbar-header {
+		float: none !important;
+		align-self: flex-start;
+		width: 150px;
+	}
+
+	.social-container {
+		justify-content: flex-end;
+	}
+
+	.links-container {
+		width: 100%;
+	}
+
+	.navbar-nav, .links-container .navbar-nav > li {
+		float: none !important;
+		display: flex;
+		justify-content: center;
+	}
+
+	.navbar-default .navbar-collapse {
+		display: inline-flex !important;
+		width: 100%;
+	}
+
+	.links-container .navbar-nav {
+		justify-content: center;
+	}
+	//social
+	.navbar-right {
+		// float: right !important;
+		// margin-right: -15px;
+		float: none !important;
+		margin-right: 0;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.navbar-header {
+		display: flex;
+		float: none !important;
+	}
+
+	.navbar-collapse.collapse {
+		display: inline-flex;
+	}
 }
 
-.navbar-header {
-  float: none !important;
-}
-
-.navbar-collapse.collapse {
- // display: block !important;
- // height: auto !important;
- // padding-bottom: 0;
- // overflow: visible !important;
-
-  }
-}
-.links-container {
-
-}
 
 
 .links {
-
 }
 
 .album {
-
 }
+
 .album img {
-	width: 90%;	
+	width: 90%;
 }
 
 .upcoming li {
-  text-align: left;
+	text-align: left;
 }
+
 .middle {
-	
 }
 
 .widget {
 	width: 25px;
-	height: 25px;	
+	height: 25px;
 }
 
 #home section, footer {
-  text-align: center;
+	text-align: center;
 }
 
 .right-sidebar {
-
 }
 
 .form {
-  border: 3px solid @purple;
-  border-radius: 10px;
-  padding: 10px 5%;
+	border: 3px solid @purple;
+	border-radius: 10px;
+	padding: 10px 5%;
 }
 
 .bottom {
-
 }
+
 .soundcloud {
 	margin: 50px 10%;
 }
@@ -101,21 +121,22 @@ h1, h2, h3, h4, serif, nav {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
+	position: relative;
+	min-height: 100%;
 }
 
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 50px;
+}
 
 .footer div {
 	width: 100%;
@@ -124,8 +145,8 @@ body {
 /****************/
 
 .nav-footer {
-  text-decoration: none;
-  list-style-type: none;
-  display: flex;       
-  justify-content: space-around;
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
 }
