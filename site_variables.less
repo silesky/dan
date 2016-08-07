@@ -7,7 +7,7 @@ light blue:
 #D5F1FD
 
 light purple:
-#B1B8D4
+#B1B8D4;
 
 Dark purple: 
 #55404F
@@ -15,6 +15,27 @@ Dark purple:
 Black
 #070208
  */
+
+@purple: #8E869B;
+@light-purple: #B1B8D4;
+@dark-purple: #55404F;
+@light-blue: #D5F1FD;
+@black: #070208;
+
+
+// @gray-base:              #000;
+// @gray-darker:            #222; // #222
+// @gray-dark:              #282828;   // #333
+// @gray:                   #555; // #555
+// @gray-light:             #888;   // #999
+// @gray-lighter:           #ADAFAE; // #eee
+
+// @brand-primary:         #2A9FD6;
+// @brand-success:         #77B300;
+// @brand-info:            #9933CC;
+// @brand-warning:         #FF8800;
+// @brand-danger:          #CC0000;
+// 
  //_____^^ DONT TOUCH ABOVE ^^_____
 
 //-----------------------------------------------------
@@ -34,9 +55,9 @@ Black
 @gray-light:             #888;   // #999
 @gray-lighter:           #ADAFAE; // #eee
 
-@brand-primary:         #2A9FD6;
-@brand-success:         #77B300;
-@brand-info:            #9933CC;
+@brand-primary:         @purple;
+@brand-success:         #B1B8D4;
+@brand-info:            #55404F;
 @brand-warning:         #FF8800;
 @brand-danger:          #CC0000;
 
@@ -46,7 +67,7 @@ Black
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #060606;
+@body-bg:               @black;
 //** Global text color on `<body>`.
 @text-color:            @gray-light;
 
@@ -220,7 +241,8 @@ Black
 @input-border-radius-small:      @border-radius-small;
 
 //** Border color for inputs on focus
-@input-border-focus:             #66afe9;
+
+@input-border-focus:          	@light-purple;  
 
 //** Placeholder text color
 @input-color-placeholder:        @gray-light;
