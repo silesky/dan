@@ -6922,12 +6922,17 @@ h3,
 h4,
 serif,
 nav {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Libre Baskerville', serif;
 }
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   color: #ccc;
 }
 @media (min-width: 768px) {
+  .links-container,
+  .navbar-header {
+    font-size: 1.4em;
+  }
   .navbar {
     float: none !important;
     display: flex;
@@ -6935,6 +6940,7 @@ body {
   }
   .navbar-brand,
   .navbar-header {
+    display: none;
     float: none !important;
     align-self: flex-start;
     width: 150px;
@@ -6949,7 +6955,7 @@ body {
   .links-container .navbar-nav > li {
     float: none !important;
     display: flex;
-    margin: 0 7%;
+    margin: 0 3%;
     align-items: center;
   }
   .navbar-default .navbar-collapse {
@@ -6971,6 +6977,16 @@ body {
   }
   .navbar-collapse.collapse {
     display: inline-flex;
+  }
+}
+@media (max-width: 930px) {
+  .links-container .navbar-nav {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: block;
   }
 }
 .panel-primary {
@@ -7017,7 +7033,6 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: px;
 }
 .footer {
   position: absolute;
