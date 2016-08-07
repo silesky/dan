@@ -4,6 +4,21 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /* imported by bootstrap.less */
+/*purple:
+#8E869B
+
+light blue:
+#D5F1FD
+
+light purple:
+#B1B8D4
+
+Dark purple: 
+#55404F
+
+Black
+#070208
+ */
 .navbar {
   background-image: -webkit-linear-gradient(#151515, #060606 60%, #000000);
   background-image: -o-linear-gradient(#151515, #060606 60%, #000000);
@@ -459,6 +474,53 @@ a.list-group-item-danger.active:focus {
   border-color: #000;
 }
 /* imported by bootstrap.less */
+/* home */
+.album img {
+  width: 100%;
+}
+.middle {
+  text-align: center;
+}
+.widget {
+  width: 25px;
+  height: 25px;
+}
+.right-sidebar {
+  text-align: center;
+}
+.soundcloud {
+  margin: 50px 1%;
+}
+/************* /
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+.footer div {
+  width: 100%;
+}
+/****************/
+.nav-footer {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
