@@ -3,231 +3,8 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-.text-primary,
-.text-primary:hover {
-  color: #55404F;
-}
-.text-success,
-.text-success:hover {
-  color: #D5F1FD;
-}
-.text-danger,
-.text-danger:hover {
-  color: #d9534f;
-}
-.text-warning,
-.text-warning:hover {
-  color: #f0ad4e;
-}
-.text-info,
-.text-info:hover {
-  color: #8E869B;
-}
-.bg-success,
-.bg-info,
-.bg-warning,
-.bg-danger {
-  color: #fff;
-}
-table,
-.table {
-  color: #fff;
-}
-table a:not(.btn),
-.table a:not(.btn) {
-  color: #fff;
-  text-decoration: underline;
-}
-table .dropdown-menu a,
-.table .dropdown-menu a {
-  text-decoration: none;
-}
-table .text-muted,
-.table .text-muted {
-  color: #888;
-}
-.table-responsive > .table {
-  background-color: #181818;
-}
-.has-warning .help-block,
-.has-warning .control-label,
-.has-warning .radio,
-.has-warning .checkbox,
-.has-warning .radio-inline,
-.has-warning .checkbox-inline,
-.has-warning.radio label,
-.has-warning.checkbox label,
-.has-warning.radio-inline label,
-.has-warning.checkbox-inline label,
-.has-warning .form-control-feedback {
-  color: #f0ad4e;
-}
-.has-warning .form-control,
-.has-warning .form-control:focus,
-.has-warning .input-group-addon {
-  border-color: #f0ad4e;
-}
-.has-error .help-block,
-.has-error .control-label,
-.has-error .radio,
-.has-error .checkbox,
-.has-error .radio-inline,
-.has-error .checkbox-inline,
-.has-error.radio label,
-.has-error.checkbox label,
-.has-error.radio-inline label,
-.has-error.checkbox-inline label,
-.has-error .form-control-feedback {
-  color: #d9534f;
-}
-.has-error .form-control,
-.has-error .form-control:focus,
-.has-error .input-group-addon {
-  border-color: #d9534f;
-}
-.has-success .help-block,
-.has-success .control-label,
-.has-success .radio,
-.has-success .checkbox,
-.has-success .radio-inline,
-.has-success .checkbox-inline,
-.has-success.radio label,
-.has-success.checkbox label,
-.has-success.radio-inline label,
-.has-success.checkbox-inline label,
-.has-success .form-control-feedback {
-  color: #D5F1FD;
-}
-.has-success .form-control,
-.has-success .form-control:focus,
-.has-success .input-group-addon {
-  border-color: #D5F1FD;
-}
-legend {
-  color: #fff;
-}
-.input-group-addon {
-  background-color: #424242;
-}
-.nav-tabs a,
-.nav-pills a,
-.breadcrumb a,
-.pager a {
-  color: #fff;
-}
-.alert .alert-link,
-.alert a {
-  color: #fff;
-  text-decoration: underline;
-}
-.alert .close {
-  text-decoration: none;
-}
-.close {
-  color: #fff;
-  text-decoration: none;
-  opacity: 0.4;
-}
-.close:hover,
-.close:focus {
-  color: #fff;
-  opacity: 1;
-}
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-  border-color: #282828;
-}
-a.list-group-item.active,
-a.list-group-item.active:hover,
-a.list-group-item.active:focus {
-  border-color: #282828;
-}
-a.list-group-item-success.active {
-  background-color: #D5F1FD;
-}
-a.list-group-item-success.active:hover,
-a.list-group-item-success.active:focus {
-  background-color: #bde9fc;
-}
-a.list-group-item-warning.active {
-  background-color: #f0ad4e;
-}
-a.list-group-item-warning.active:hover,
-a.list-group-item-warning.active:focus {
-  background-color: #eea236;
-}
-a.list-group-item-danger.active {
-  background-color: #d9534f;
-}
-a.list-group-item-danger.active:hover,
-a.list-group-item-danger.active:focus {
-  background-color: #d43f3a;
-}
-.jumbotron h1,
-.jumbotron h2,
-.jumbotron h3,
-.jumbotron h4,
-.jumbotron h5,
-.jumbotron h6 {
-  color: #fff;
-}
-/* imported by bootstrap.less */
-/* home */
-.album img {
-  width: 90%;
-}
-.upcoming li {
-  text-align: left;
-}
-.widget {
-  width: 25px;
-  height: 25px;
-}
-#home section,
-footer {
-  text-align: center;
-}
-.form {
-  border: 3px solid #8E869B;
-  border-radius: 10px;
-  padding: 10px 5%;
-}
-.soundcloud {
-  margin: 50px 10%;
-}
-/************* /
-
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-}
-.footer div {
-  width: 100%;
-}
-/****************/
-.nav-footer {
-  text-decoration: none;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6944,5 +6721,250 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.text-primary,
+.text-primary:hover {
+  color: #55404F;
+}
+.text-success,
+.text-success:hover {
+  color: #D5F1FD;
+}
+.text-danger,
+.text-danger:hover {
+  color: #d9534f;
+}
+.text-warning,
+.text-warning:hover {
+  color: #f0ad4e;
+}
+.text-info,
+.text-info:hover {
+  color: #8E869B;
+}
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger {
+  color: #fff;
+}
+table,
+.table {
+  color: #fff;
+}
+table a:not(.btn),
+.table a:not(.btn) {
+  color: #fff;
+  text-decoration: underline;
+}
+table .dropdown-menu a,
+.table .dropdown-menu a {
+  text-decoration: none;
+}
+table .text-muted,
+.table .text-muted {
+  color: #888;
+}
+.table-responsive > .table {
+  background-color: #181818;
+}
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline,
+.has-warning.radio label,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label,
+.has-warning .form-control-feedback {
+  color: #f0ad4e;
+}
+.has-warning .form-control,
+.has-warning .form-control:focus,
+.has-warning .input-group-addon {
+  border-color: #f0ad4e;
+}
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label,
+.has-error .form-control-feedback {
+  color: #d9534f;
+}
+.has-error .form-control,
+.has-error .form-control:focus,
+.has-error .input-group-addon {
+  border-color: #d9534f;
+}
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label,
+.has-success .form-control-feedback {
+  color: #D5F1FD;
+}
+.has-success .form-control,
+.has-success .form-control:focus,
+.has-success .input-group-addon {
+  border-color: #D5F1FD;
+}
+legend {
+  color: #fff;
+}
+.input-group-addon {
+  background-color: #424242;
+}
+.nav-tabs a,
+.nav-pills a,
+.breadcrumb a,
+.pager a {
+  color: #fff;
+}
+.alert .alert-link,
+.alert a {
+  color: #fff;
+  text-decoration: underline;
+}
+.alert .close {
+  text-decoration: none;
+}
+.close {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.4;
+}
+.close:hover,
+.close:focus {
+  color: #fff;
+  opacity: 1;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #282828;
+}
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+  border-color: #282828;
+}
+a.list-group-item-success.active {
+  background-color: #D5F1FD;
+}
+a.list-group-item-success.active:hover,
+a.list-group-item-success.active:focus {
+  background-color: #bde9fc;
+}
+a.list-group-item-warning.active {
+  background-color: #f0ad4e;
+}
+a.list-group-item-warning.active:hover,
+a.list-group-item-warning.active:focus {
+  background-color: #eea236;
+}
+a.list-group-item-danger.active {
+  background-color: #d9534f;
+}
+a.list-group-item-danger.active:hover,
+a.list-group-item-danger.active:focus {
+  background-color: #d43f3a;
+}
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h4,
+.jumbotron h5,
+.jumbotron h6 {
+  color: #fff;
+}
+/* imported by bootstrap.less */
+/* home */
+h1,
+h2,
+h3,
+h4,
+serif,
+nav {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+    display: flex;
+  }
+  .navbar-right {
+    float: none !important;
+    margin-right: 0;
+    display: flex;
+  }
+  .navbar-header {
+    float: none !important;
+  }
+}
+.album img {
+  width: 90%;
+}
+.upcoming li {
+  text-align: left;
+}
+.widget {
+  width: 25px;
+  height: 25px;
+}
+#home section,
+footer {
+  text-align: center;
+}
+.form {
+  border: 3px solid #8E869B;
+  border-radius: 10px;
+  padding: 10px 5%;
+}
+.soundcloud {
+  margin: 50px 10%;
+}
+/************* /
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+}
+.footer div {
+  width: 100%;
+}
+/****************/
+.nav-footer {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 /*# sourceMappingURL=bootstrap.css.map */
