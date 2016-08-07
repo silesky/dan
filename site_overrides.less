@@ -1,10 +1,36 @@
-//imported by bootstrap.less
 
+//imported by bootstrap.less
+/*
+
+// site_variables 
+gray-base:              #000;
+@gray-darker:            #222; // #222
+@gray-dark:              #282828;   // #333
+@gray:                   #555; // #555
+@gray-light:             #888;   // #999
+@gray-lighter:           #ADAFAE; // #eee
+
+
+// site_variables_overrides
+@purple: #8E869B;
+@light-purple: #B1B8D4;
+@dark-purple: #55404F;
+@light-blue: #D5F1FD;
+@black: #070208;
+
+@brand-primary:        	@dark-purple;
+@brand-success:         @light-blue;
+@brand-info:            @purple;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+*/
 /** home **/
 h1, h2, h3, h4, serif, nav {
 	font-family: @font-family-serif;
 }
-
+body {
+	color: @gray-lighter;
+}
 
 
 //.navbar {
@@ -13,7 +39,7 @@ h1, h2, h3, h4, serif, nav {
   //   margin-bottom: 20px;
   //   border: 1px solid transparent;
   //;
-}
+
 //for site nav, 
 // get rid of all floats, use flexbox
 
@@ -21,6 +47,7 @@ h1, h2, h3, h4, serif, nav {
 	.navbar {
 		float: none !important;
 		display: flex;
+		align-items: center;
 	}
 
 	.navbar-brand, .navbar-header {
@@ -40,7 +67,10 @@ h1, h2, h3, h4, serif, nav {
 	.navbar-nav, .links-container .navbar-nav > li {
 		float: none !important;
 		display: flex;
-		justify-content: center;
+		margin: 0 7%;
+		align-items: center; // for the slashes
+
+		
 	}
 
 	.navbar-default .navbar-collapse {
@@ -76,36 +106,52 @@ h1, h2, h3, h4, serif, nav {
 .links {
 }
 
+// upcoming on left
+.panel-primary {
+	border: 1px solid @gray-dark;
+}
+.panel-body {
+	color: @gray-lighter;
+	background-color: #070208;
+	font-size: large;
+}
+.upcoming li {
+	text-align: left;
+}
+
+//center
 .album {
 }
 
 .album img {
 	width: 90%;
+	border: 1px solid @gray-dark;
 }
 
-.upcoming li {
-	text-align: left;
+.album-caption {
+	color: @gray-lighter;
+	margin: 10px 1%;
+	line-height: 2em;
+	font-size: large;
 }
-
 .middle {
 }
 
-.widget {
-	width: 25px;
-	height: 25px;
-}
+
 
 #home section, footer {
 	text-align: center;
-}
 
+}
+// right
 .right-sidebar {
 }
 
 .form {
-	border: 3px solid @purple;
+	border: 1px solid @gray-dark;
 	border-radius: 10px;
 	padding: 10px 5%;
+
 }
 
 .bottom {
@@ -135,7 +181,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
-	height: 50px;
+	height: 30px;
 }
 
 .footer div {
