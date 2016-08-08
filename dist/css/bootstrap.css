@@ -6914,8 +6914,14 @@ gray-base:              #000;
 @brand-info:            @purple;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
-*/
-/** home **/
+
+
+
+/* global */
+html {
+  position: relative;
+  min-height: 100%;
+}
 h1,
 h2,
 h3,
@@ -6927,6 +6933,14 @@ nav {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #ccc;
+}
+.navbar-collapse,
+.navbar-default,
+.panel-body,
+.navbar-form,
+body {
+  background-image: url('../../img/background_700.jpg');
+  background-repeat: repeat-x repeat-y;
 }
 @media (min-width: 768px) {
   .links-container,
@@ -6955,7 +6969,7 @@ body {
   .links-container .navbar-nav > li {
     float: none !important;
     display: flex;
-    margin: 0 2% 0;
+    margin: 0 1% 0;
     align-items: center;
   }
   .navbar-default .navbar-collapse {
@@ -7010,7 +7024,6 @@ body {
 .album-caption {
   color: #ccc;
   margin: 10px 1%;
-  line-height: 2em;
   font-size: large;
 }
 #home section,
@@ -7030,23 +7043,6 @@ footer {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 30px;
-}
-.footer div {
-  width: 100%;
-}
 /****************/
 .nav-footer {
   text-decoration: none;

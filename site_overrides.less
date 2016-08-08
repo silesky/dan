@@ -22,8 +22,17 @@ gray-base:              #000;
 @brand-info:            @purple;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
-*/
-/** home **/
+
+
+
+/* global */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+
 h1, h2, h3, h4, serif, nav {
     font-family: 'Libre Baskerville', serif;
 }
@@ -31,8 +40,14 @@ h1, h2, h3, h4, serif, nav {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: @gray-lighter;
+   
 }
 
+// velvetify
+.navbar-collapse, .navbar-default, .panel-body, .navbar-form, body {
+	background-image: url('../../img/background_700.jpg'); // need to use relative path for seth
+    background-repeat: repeat-x repeat-y; 
+}
 
 //font-family: 'Playfair Display', serif;
 
@@ -59,7 +74,7 @@ body {
 @media (min-width: 768px) {
 
 	.links-container, .navbar-header {
-				  font-size: 1.4em;
+	 font-size: 1.4em;
 }
 
 .navbar {
@@ -86,7 +101,7 @@ body {
 .navbar-nav, .links-container .navbar-nav > li {
     float: none !important;
     display: flex;
-    margin: 0 2% 0;
+    margin: 0 1% 0;
     align-items: center;
     // for the slashes;
 }
@@ -154,8 +169,7 @@ body {
 }
 
 //center
-.album {
-}
+
 
 .album img {
     width: 90%;
@@ -165,7 +179,6 @@ body {
 .album-caption {
     color: @gray-lighter;
     margin: 10px 1%;
-    line-height: 2em;
     font-size: large;
 }
 
@@ -197,26 +210,23 @@ body {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-    position: relative;
-    min-height: 100%;
-}
+// html {
+//     position: relative;
+//     min-height: 100%;
+// }
 
-body {
-	/* Margin bottom by footer height */;
-}
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-	/* Set the fixed height of the footer here */
-    height: 30px;
-}
+// .footer {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+// 	/* Set the fixed height of the footer here */
+//     height: 30px;
+// }
 
-.footer div {
-    width: 100%;
-}
+// .footer div {
+//     width: 100%;
+// }
 
 /****************/
 
