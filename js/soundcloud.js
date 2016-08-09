@@ -1,0 +1,4 @@
+/* globals $ */
+$(() => {
+  console.log('ready');
+});
