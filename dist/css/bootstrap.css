@@ -6964,13 +6964,18 @@ body {
   }
   .links-container {
     width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  li.divider {
+    align-self: center;
   }
   .navbar-nav,
   .links-container .navbar-nav > li {
     float: none !important;
     display: flex;
     margin: 0 1% 0;
-    align-items: center;
   }
   .navbar-default .navbar-collapse {
     display: inline-flex !important;
