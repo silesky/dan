@@ -71,6 +71,14 @@ body {
 //for site nav, 
 // get rid of all floats, use flexbox
 
+
+@media (max-width: 986px) {
+    .links-container .navbar-nav {
+        justify-content: flex-end;
+    };
+
+}
+
 @media (min-width: 768px) {
 
 	.links-container, .navbar-header {
@@ -138,17 +146,14 @@ li.divider {
 .navbar-collapse.collapse {
     display: inline-flex;
 }
-}
 
-@media (max-width: 990px) {
-    .links-container .navbar-nav {
-        justify-content: flex-end;
-    };
-    .contact {
-    	display: none;
-    }
+footer .mail {
+	display: none;	
+} 
+
 
 }
+
 
 @media (max-width: 768px) {
 
@@ -157,6 +162,9 @@ li.divider {
     };
     .divider {
     	display: none !important;
+    }
+    .contact {
+    	display: none;	
     }
 }
 
@@ -240,7 +248,9 @@ li.divider {
 // }
 
 /****************/
+footer {
 
+}
 .nav-footer {
     text-decoration: none;
     list-style-type: none;

@@ -6942,6 +6942,11 @@ body {
   background-image: url('../../img/background_700.jpg');
   background-repeat: repeat-x repeat-y;
 }
+@media (max-width: 986px) {
+  .links-container .navbar-nav {
+    justify-content: flex-end;
+  }
+}
 @media (min-width: 768px) {
   .links-container,
   .navbar-header {
@@ -6997,12 +7002,7 @@ body {
   .navbar-collapse.collapse {
     display: inline-flex;
   }
-}
-@media (max-width: 990px) {
-  .links-container .navbar-nav {
-    justify-content: flex-end;
-  }
-  .contact {
+  footer .mail {
     display: none;
   }
 }
@@ -7012,6 +7012,9 @@ body {
   }
   .divider {
     display: none !important;
+  }
+  .contact {
+    display: none;
   }
 }
 .panel-primary {
