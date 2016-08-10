@@ -6998,9 +6998,12 @@ body {
     display: inline-flex;
   }
 }
-@media (max-width: 930px) {
+@media (max-width: 990px) {
   .links-container .navbar-nav {
     justify-content: flex-end;
+  }
+  .contact {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -7040,8 +7043,8 @@ footer {
   border-radius: 10px;
   padding: 10px 5%;
 }
-.soundcloud {
-  margin: 50px 10%;
+.widget-container {
+  margin-top: 15px;
 }
 /************* /
 
