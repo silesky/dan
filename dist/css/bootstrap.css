@@ -1087,12 +1087,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #55404F;
+  color: #E4E0C2;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #55404F;
+  color: #E4E0C2;
   text-decoration: underline;
 }
 a:focus {
@@ -3386,7 +3386,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-link {
-  color: #55404F;
+  color: #E4E0C2;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3407,7 +3407,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #55404F;
+  color: #E4E0C2;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3987,7 +3987,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #222;
-  border-color: #55404F;
+  border-color: #E4E0C2;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4998,7 +4998,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #55404F;
+  border-color: #E4E0C2;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -6890,6 +6890,9 @@ a.list-group-item-danger.active:focus {
 .jumbotron h5,
 .jumbotron h6 {
   color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #E4E0C2;
 }
 /*
 
