@@ -1,8 +1,8 @@
 //imported by bootstrap.less
 /*
 
-// site_variables 
-gray-base:              #000;
+// site_variables
+@gray-base:              #000;
 @gray-darker:            #222; // #222
 @gray-dark:              #282828;   // #333
 @gray:                   #555; // #555
@@ -25,53 +25,44 @@ gray-base:              #000;
 
 
 
-/* global */
+/* Global */
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: @gray-lighter;
+
+}
+
+// top navigation links (excludes social)
+.navbar-default .links-container li > a {
+  color: @brand-warning;
+  font-weight: bolder;
+}
+
+// social only
+
+main a, footer a {
+ text-decoration: underline;
+}
+
+h1, h2, h3, h4, serif, nav {
+    font-family: 'Libre Baskerville', serif;
+}
+
+
 html {
     position: relative;
     min-height: 100%;
 }
 
 
-
-h1, h2, h3, h4, serif, nav {
-    font-family: 'Libre Baskerville', serif;
-}
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: @gray-lighter;
-   
-}
-
-// velvetify
-.navbar-collapse, .navbar-default, .panel-body, .navbar-form, body {
+.navbar-collapse, .navbar-default, .panel-body, .navbar-form, body { // velvetify
 	background-image: url('../../img/background_700.jpg'); // need to use relative path for seth
-    background-repeat: repeat-x repeat-y; 
+    background-repeat: repeat-x repeat-y;
 }
 
-//font-family: 'Playfair Display', serif;
-
-// font-family: 'Libre Baskerville', serif;
-
-// font-family: 'Cinzel', serif;
-
-// font-family: 'Open Sans', sans-serif;
-
-// font-family: 'Source Sans Pro', sans-serif;
-
-// font-family: 'Open Sans Condensed', sans-serif;
-
-//.navbar {
-    //   position: relative;
-    //   min-height: 50px;
-    //   margin-bottom: 20px;
-    //   border: 1px solid transparent;
-    //;
-
-//for site nav, 
-// get rid of all floats, use flexbox
-
-
+/* Media */
 @media (max-width: 986px) {
     .links-container .navbar-nav {
         justify-content: flex-end;
@@ -102,6 +93,9 @@ body {
     justify-content: flex-end;
 }
 
+.social-container i {
+
+}
 .links-container {
     width: 100%;
     align-items: center;
@@ -112,12 +106,12 @@ body {
 li.divider {
     align-self: center;
 }
-.navbar-nav, .links-container .navbar-nav > li {
+.navbar-nav, .links-container .navbar-nav > li { // for the slashes;
     float: none !important;
     display: flex;
     margin: 0 1% 0;
 
-    // for the slashes;
+
 }
 
 .navbar-default .navbar-collapse {
@@ -128,10 +122,9 @@ li.divider {
 .links-container .navbar-nav {
     justify-content: center;
 }
-	//social
+
 	.navbar-right {
-    // float: right !important;
-    // margin-right: -15px;
+//social
     float: none !important;
     margin-right: 0;
     display: flex;
@@ -148,8 +141,8 @@ li.divider {
 }
 
 footer .mail {
-	display: none;	
-} 
+	display: none;
+}
 
 
 }
@@ -163,9 +156,9 @@ footer .mail {
     .divider {
     	display: none !important;
     }
-    .contact {
-    	display: none;	
-    }
+
+
+
 }
 
 .links {
@@ -219,7 +212,7 @@ footer .mail {
 
 
 .widget-container {
-	margin-top: 15px;	
+	margin-top: 15px;
 }
 
 

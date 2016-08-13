@@ -1087,12 +1087,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #E4E0C2;
+  color: #f0ad4e;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #E4E0C2;
+  color: #f0ad4e;
   text-decoration: underline;
 }
 a:focus {
@@ -3386,7 +3386,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-link {
-  color: #E4E0C2;
+  color: #f0ad4e;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3407,7 +3407,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #E4E0C2;
+  color: #f0ad4e;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3987,7 +3987,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #222;
-  border-color: #E4E0C2;
+  border-color: #f0ad4e;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4998,7 +4998,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #E4E0C2;
+  border-color: #f0ad4e;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -6891,13 +6891,10 @@ a.list-group-item-danger.active:focus {
 .jumbotron h6 {
   color: #fff;
 }
-.navbar-default .navbar-nav > li > a {
-  color: #E4E0C2;
-}
 /*
 
-// site_variables 
-gray-base:              #000;
+// site_variables
+@gray-base:              #000;
 @gray-darker:            #222; // #222
 @gray-dark:              #282828;   // #333
 @gray:                   #555; // #555
@@ -6920,10 +6917,18 @@ gray-base:              #000;
 
 
 
-/* global */
-html {
-  position: relative;
-  min-height: 100%;
+/* Global */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #ccc;
+}
+.navbar-default .links-container li > a {
+  color: #f0ad4e;
+  font-weight: bolder;
+}
+main a,
+footer a {
+  text-decoration: underline;
 }
 h1,
 h2,
@@ -6933,9 +6938,9 @@ serif,
 nav {
   font-family: 'Libre Baskerville', serif;
 }
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #ccc;
+html {
+  position: relative;
+  min-height: 100%;
 }
 .navbar-collapse,
 .navbar-default,
@@ -6945,6 +6950,7 @@ body {
   background-image: url('../../img/background_700.jpg');
   background-repeat: repeat-x repeat-y;
 }
+/* Media */
 @media (max-width: 986px) {
   .links-container .navbar-nav {
     justify-content: flex-end;
@@ -7015,9 +7021,6 @@ body {
   }
   .divider {
     display: none !important;
-  }
-  .contact {
-    display: none;
   }
 }
 .panel-primary {

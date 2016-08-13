@@ -4,31 +4,29 @@
 // 	@gray:                   #555; // #555
 //	@gray-light:             #888;   // #999
 @gray-lighter:           #ccc; // #eee
-
 @purple: #8E869B;
 @light-purple: #B1B8D4;
 @dark-purple: #55404F;
 @light-blue: #D5F1FD;
+@beige: #E4E0C2; //complementary
 @black: #070208;
+
 @brand-primary:        	@dark-purple;
 @brand-success:         @light-blue;
 @brand-info:            @purple;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
-@light-green: 			#E4E0C2;
+
 
 //** Global text color on `<body>`.
 @text-color:            @gray-light;
 
 //** Global textual link color.
-@link-color:            @light-green;
+@link-color:            @brand-warning;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      @link-color;
+@link-hover-color:      @brand-warning;
 //** Link hover decoration.
-@link-hover-decoration: underline;
-.navbar-default .navbar-nav > li > a {
-	color: @link-color;
-}
+
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
